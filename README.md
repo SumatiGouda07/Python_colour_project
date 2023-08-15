@@ -22,6 +22,6 @@ The minimum distance is calculated by considering moving towards the origin poin
   * This system is useful in detecting traffic and vehicle back lights and takes decision to stop, start and continue driving.
   * This also have much application in industry to pick and place different colored object by the robotic arm.
   * Color detection is also used as a tool in various image editing and drawing apps.
-  * 
+  
 ### CONCLUSION
  In this project we defined to get the required color field from an RGB image. In this various steps are  implemented using the openCv platform. The main positive point of this method is its color differentiation  of a mono color. In the future scope, the detection of the edge detection techniques has different other  applications like facial detection, color conversion for grayscale image etc. that can also be implemented. 
