@@ -11,7 +11,9 @@ The first step is to fetch a high-quality image with resolution. To load an imag
 #### Extraction of RGB Colors
 
 In this phase, the 3 layered colors are extracted from the input image. All the color images on screens  such as televisions, computer, monitors, laptops and mobile screens are produced by the combination of  Red, Green and Blue light. Each primary color takes an intensive value 0 (lowest) to 255 (highest).  When mixing 3 primary colors at different intensity levels a variety of colors are produced. For Example: If  the intensity value of the primary colors is 0, this linear combination corresponds to black. If the intensity  value of the primary colors is 1, this linear combination corresponds to white. 
-Index=[ "color",  "color_name", "hex", "R", "G", "B"] 
+
+Index=[ "color",  "color_name", "hex", "R", "G", "B"].
+
 #### Calculate minimum distance from coordinates
 
 The minimum distance is calculated by considering moving towards the origin point from all colors to get  the most matching color. The pandas library serves as an important utility to perform various operations on  comma- seperated values like pd.read _csv() reads the csv file and loads it into the pandas data frame. D = abs(R-int(csv.loc[i ,"R"])) + abs (G-int(csv.loc[i ,"G"])) + abs (B- int (csv.loc [i ,"B"]))Image Display  with Shades of Color: The rectangle window is used to display the image with shades of color.  After the double-click is triggered, the RGB values and color name is updated. To display an image  Cv2.imshow () method is used. By using cv2.rectangle and cv2.putText () functions, the color name and its  intensity level can be obtained. text=getColorName(r,g,b) + 'R='+str(r) + 'G='+str(g) + 'B=' +str(b)
